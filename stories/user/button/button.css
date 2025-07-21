@@ -1,0 +1,41 @@
+@import url("../root.css");
+@import url("../pd_kendo.css");
+
+/****** Podosoftware CSS ******/
+/* hegiht: 60 / 50 / 40 */
+[class*="btn-"] { display: flex; align-items: center; justify-content: center; cursor: pointer; font-family: var(--Pretendard); transition: background .3s, border-color .3s ease, color .3s ease;}
+[class*="btn-"]:disabled { border: 1px solid var(--btn-disabled-border-color); background: var(--btn-disabled-bg-color); color: var(--btn-disabled-font-color); cursor: default !important;}
+/* size */
+[class*="btn-"].size-b { height: 60px; padding: 0 25px; font-size: 17px; font-weight: bold; letter-spacing: -0.34px;}
+[class*="btn-"].size-m { height: 50px; padding: 0 25px; font-size: 16px; font-weight: bold; letter-spacing: -0.32px;}
+[class*="btn-"].size- { height: 40px; padding: 0 25px; font-size: 13px; font-weight: 500; letter-spacing: -0.26px;}
+[class*="btn-"].size-s { height: 36px; padding: 0 10px; font-size: 12px; font-weight: 500; letter-spacing: -0.24px;}
+
+/* 기본 */
+.btn-default { padding: 0 20px; border: 1px solid var(--btn-default-border-color); background: #FFFFFF; color: var(--btn-default-font-color); cursor: pointer;}
+.btn-default:not(:disabled):hover,
+.btn-default:active { border: 1px solid var(--primary-500); background: #FFFFFF; color: var(--primary-500);}
+.btn-default:focus,
+.btn-default:active:focus { border: 1px solid #555555; background: #FFFFFF;}
+/* 저장, 승인 등 긍정형 */
+.btn-point { border: 1px solid var(--primary-500); background: var(--primary-500); color: #FFFFFF;}
+.btn-point:focus { border: 1px solid var(--primary-500); background: #FFFFFF; color: var(--primary-500);}
+.btn-point:active,
+.btn-point:not(:disabled):hover { border: 1px solid var(--primary-600); background: var(--primary-600); color: #FFFFFF;}
+/* 검은색 */
+.btn-submit { border: 1px solid var(--apply-btn-bg); background: var(--apply-btn-bg); color: #fff;}
+
+/* round */
+.pd-round0 { border-radius: 0;}
+.pd-round-2 { border-radius: 2px;}
+.pd-round-4 { border-radius: 4px;}
+.pd-round-6 { border-radius: 6px;}
+.pd-round-8 { border-radius: 8px;}
+.pd-round-10 { border-radius: 10px;}
+.pd-round-12 { border-radius: 12px;}
+.pd-round-14 { border-radius: 14px;}
+.pd-round-16 { border-radius: 16px;}
+.pd-round-18 { border-radius: 18px;}
+.pd-round-20 { border-radius: 20px;}
+.pd-round-100 { border-radius: 100px;}
+.pd-round-full { border-radius: 9999px;}
